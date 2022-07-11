@@ -1,4 +1,4 @@
-#include <M5StickC.h>
+//#include <M5StickC.h>
 
 /*
     Description: Control RGB LED to run rainbow light show
@@ -6,14 +6,14 @@
     FastLED: https://github.com/FastLED/FastLED
 */
 //#include <M5Stack.h>
-//#include <M5Core2.h>
+#include <M5Core2.h>
 #include "FastLED.h"
 
 #define Neopixel_PIN 32
-#define NUM_LEDS    60 // 60LEDs per 1m
+#define NUM_LEDS    120 // 60LEDs per 1m
 
 // NeoPixel brightness, 0 (min) to 255 (max)
-#define BRIGHTNESS 64// Set BRIGHTNESS to about 1/4 (max = 255)
+#define BRIGHTNESS 127// Set BRIGHTNESS to about 1/4 (max = 255)
 
 CRGB leds[NUM_LEDS];
 int counter = 0;
